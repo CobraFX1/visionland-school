@@ -258,7 +258,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(27, 77, 62, 0.7), rgba(27, 77, 62, 0.8)), url('/hero.png');
+  background-image: linear-gradient(rgba(27, 77, 62, 0.7), rgba(27, 77, 62, 0.8)), url('/src/assets/Airport.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -511,7 +511,14 @@ a {
   height: 60px;
   border-radius: 50%;
   background: var(--secondary-color);
-  /* Use initials or generated face */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.1rem;
+  flex-shrink: 0;
 }
 
 .alumni-card p {
@@ -657,4 +664,361 @@ a {
   .hero-actions {
     flex-direction: column;
   }
+
+  .alumni-carousel-wrapper {
+    padding: 0 1.5rem;
+  }
+  .alumni-slide {
+    flex: 0 0 100%;
+  }
+  .carousel-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+}
+
+/* ==================== */
+/* Alumni Carousel v2   */
+/* ==================== */
+.alumni-carousel-wrapper {
+  position: relative;
+  padding: 0 3.5rem;
+}
+
+.alumni-carousel {
+  overflow: hidden;
+}
+
+.alumni-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.alumni-slide {
+  flex: 0 0 50%;
+  padding: 0 0.75rem;
+  box-sizing: border-box;
+}
+
+.alumni-card-v2 {
+  position: relative;
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem 2rem 2rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.alumni-card-v2:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(27, 77, 62, 0.12);
+}
+
+.card-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 16px 16px 0 0;
+}
+
+.card-quote {
+  font-family: Georgia, serif;
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--secondary-color);
+  opacity: 0.3;
+  margin-bottom: -1.5rem;
+  user-select: none;
+}
+
+.card-testimonial {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-main);
+  font-style: italic;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0ede6;
+}
+
+.card-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.card-info h4 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.card-year {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.card-role {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+/* Carousel Controls */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  background: white;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  z-index: 5;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.carousel-btn:hover {
+  background: var(--primary-color);
+  color: white;
+  box-shadow: 0 4px 15px rgba(27, 77, 62, 0.3);
+}
+
+.carousel-prev { left: 0; }
+.carousel-next { right: 0; }
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #d1d5db;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0;
+}
+
+.carousel-dot.active {
+  background: var(--primary-color);
+  width: 28px;
+  border-radius: 5px;
+}
+
+/* ==================== */
+/* NEW: WhatsApp Button */
+/* ==================== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  z-index: 999;
+  transition: var(--transition);
+  animation: whatsappPulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+}
+
+@keyframes whatsappPulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7); }
+}
+
+/* ==================== */
+/* NEW: Scroll to Top   */
+/* ==================== */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(27, 77, 62, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  z-index: 999;
+}
+
+.scroll-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-top-btn:hover {
+  background: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+/* ==================== */
+/* NEW: Lightbox        */
+/* ==================== */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.lightbox-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.lightbox-overlay.active .lightbox-img {
+  transform: scale(1);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: var(--transition);
+  line-height: 1;
+}
+
+.lightbox-close:hover {
+  color: var(--secondary-color);
+  transform: rotate(90deg);
+}
+
+.gallery-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2) !important;
+}
+
+/* ========================= */
+/* NEW: Form Validation      */
+/* ========================= */
+.form-feedback {
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  min-height: 1.2rem;
+  transition: var(--transition);
+}
+
+.form-group.valid input,
+.form-group.valid textarea {
+  border-color: #22c55e;
+}
+
+.form-group.valid .form-feedback {
+  color: #22c55e;
+}
+
+.form-group.valid .form-feedback::before {
+  content: '✓ ';
+}
+
+.form-group.invalid input,
+.form-group.invalid textarea {
+  border-color: #ef4444;
+}
+
+.form-group.invalid .form-feedback {
+  color: #ef4444;
+}
+
+.form-group.invalid .form-feedback::before {
+  content: '✗ ';
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
 }

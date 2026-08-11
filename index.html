@@ -5,7 +5,14 @@
     <link rel="icon" type="image/png" href="/visionland-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visionland School | Excellence in Education</title>
-    <meta name="description" content="Visionland School - Nurturing the leaders of tomorrow with excellence, integrity, and passion." />
+    <meta name="description" content="Visionland School, Ogijo, Ogun State - Nurturing the leaders of tomorrow with academic and moral excellence since 2010." />
+    <meta property="og:title" content="Visionland Schools | Academic and Moral Excellence" />
+    <meta property="og:description" content="Premier school in Ogijo, Ogun State. Empowering the leaders of tomorrow with academic and moral excellence since 2010." />
+    <meta property="og:image" content="/visionland-logo.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Visionland Schools | Academic and Moral Excellence" />
+    <meta name="twitter:description" content="Premier school in Ogijo, Ogun State. Empowering the leaders of tomorrow." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -81,7 +88,7 @@
 
         <div class="founder-section mt-5 fade-in-up">
           <div class="founder-image-wrapper">
-            <video controls autoplay muted loop data-src="/src/assets/Introduction.mp4" class="founder-img lazy-video" style="width: 100%; border-radius: 12px;"></video>
+            <video controls autoplay muted loop preload="none" src="/src/assets/Introduction.mp4" class="founder-img" style="width: 100%; border-radius: 12px;"></video>
           </div>
           <div class="founder-text">
             <h3>Mrs Bamikole</h3>
@@ -91,8 +98,8 @@
         </div>
 
         <div class="gallery-section mt-5 fade-in-up" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-          <img src="/src/assets/quindecial celebration.jpg" loading="lazy" alt="Quindecennial Celebration" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
-          <img src="/src/assets/visionland-students-and-lecturers.jpg" loading="lazy" alt="Students and Lecturers" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+          <img src="/src/assets/quindecial celebration.jpg" loading="lazy" alt="Quindecennial Celebration" class="gallery-img" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); cursor: pointer;" />
+          <img src="/src/assets/visionland-students-and-lecturers.jpg" loading="lazy" alt="Students and Lecturers" class="gallery-img" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); cursor: pointer;" />
         </div>
       </div>
     </section>
@@ -123,17 +130,17 @@
           </div>
         </div>
         
-        <div class="stats-banner mt-5 fade-in-up">
+        <div class="stats-banner mt-5 fade-in-up" id="stats-banner">
           <div class="stat">
-            <h4>98%</h4>
+            <h4 class="counter" data-target="98" data-suffix="%">0%</h4>
             <p>WAEC Pass Rate</p>
           </div>
           <div class="stat">
-            <h4>285</h4>
+            <h4 class="counter" data-target="285" data-suffix="">0</h4>
             <p>Average JAMB Score</p>
           </div>
           <div class="stat">
-            <h4>100%</h4>
+            <h4 class="counter" data-target="100" data-suffix="%">0%</h4>
             <p>University Placement</p>
           </div>
         </div>
@@ -141,7 +148,7 @@
         <div class="teachers-appreciation mt-5 fade-in-up text-center glass-card">
           <h3>Celebrating Our Teachers</h3>
           <p>Our dedicated staff are the backbone of Visionland Schools.</p>
-          <video controls autoplay muted loop data-src="/src/assets/teachers-day.mp4" class="lazy-video" style="width: 100%; max-width: 600px; border-radius: 12px; margin-top: 1rem;"></video>
+          <video controls autoplay muted loop preload="none" src="/src/assets/teachers-day.mp4" style="width: 100%; max-width: 600px; border-radius: 12px; margin-top: 1rem;"></video>
         </div>
       </div>
     </section>
@@ -200,13 +207,13 @@
             </ul>
           </div>
           <div class="student-life-image fade-in-right">
-            <video controls autoplay muted loop data-src="/src/assets/Social-week.mp4" class="rounded-img lazy-video" style="width: 100%; border-radius: 12px;"></video>
+            <video controls autoplay muted loop preload="none" src="/src/assets/Social-week.mp4" class="rounded-img" style="width: 100%; border-radius: 12px;"></video>
           </div>
         </div>
 
         <div class="student-life-split" style="margin-top: 4rem;">
           <div class="student-life-image fade-in-left">
-            <video controls autoplay muted loop data-src="/src/assets/cultural-day.mp4" class="rounded-img lazy-video" style="width: 100%; border-radius: 12px;"></video>
+            <video controls autoplay muted loop preload="none" src="/src/assets/cultural-day.mp4" class="rounded-img" style="width: 100%; border-radius: 12px;"></video>
           </div>
           <div class="student-life-text fade-in-right">
             <h3>Celebrating Culture & Diversity</h3>
@@ -228,29 +235,79 @@
           <h2>Alumni Success Stories</h2>
           <p>Our graduates go on to achieve extraordinary things.</p>
         </div>
-        <div class="alumni-grid">
-          <div class="alumni-card glass-card fade-in-up">
-            <div class="alumni-header">
-              <div class="alumni-avatar"></div>
-              <div>
-                <h3>Chukwudi N.</h3>
-                <span class="grad-year">Class of 2018</span>
+        <div class="alumni-carousel-wrapper fade-in-up">
+          <button class="carousel-btn carousel-prev" aria-label="Previous">&#10094;</button>
+          <div class="alumni-carousel">
+            <div class="alumni-track">
+
+              <div class="alumni-slide">
+                <div class="alumni-card-v2">
+                  <div class="card-accent"></div>
+                  <div class="card-quote">"</div>
+                  <p class="card-testimonial">Visionland gave me the foundation I needed to excel. The rigorous science curriculum prepared me perfectly for my medical studies at the University of Ibadan, and passing my JAMB was a breeze.</p>
+                  <div class="card-footer">
+                    <div class="card-avatar" style="background: linear-gradient(135deg, #D4AF37, #1B4D3E);">CN</div>
+                    <div class="card-info">
+                      <h4>Chukwudi N.</h4>
+                      <span class="card-year">Class of 2018</span>
+                      <span class="card-role">Medical Doctor</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <p>Visionland gave me the foundation I needed to excel. The rigorous science curriculum prepared me perfectly for my medical studies at the University of Ibadan, and passing my JAMB was a breeze.</p>
-            <span class="alumni-outcome">Current: Medical Doctor</span>
-          </div>
-          <div class="alumni-card glass-card fade-in-up" style="--delay: 0.2s">
-            <div class="alumni-header">
-              <div class="alumni-avatar"></div>
-              <div>
-                <h3>Aisha M.</h3>
-                <span class="grad-year">Class of 2020</span>
+
+              <div class="alumni-slide">
+                <div class="alumni-card-v2">
+                  <div class="card-accent"></div>
+                  <div class="card-quote">"</div>
+                  <p class="card-testimonial">The leadership opportunities as the Head Girl helped me build the confidence to launch my own tech startup in Yaba immediately after my NYSC.</p>
+                  <div class="card-footer">
+                    <div class="card-avatar" style="background: linear-gradient(135deg, #1B4D3E, #D4AF37);">AM</div>
+                    <div class="card-info">
+                      <h4>Aisha M.</h4>
+                      <span class="card-year">Class of 2020</span>
+                      <span class="card-role">Software Engineer</span>
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              <div class="alumni-slide">
+                <div class="alumni-card-v2">
+                  <div class="card-accent"></div>
+                  <div class="card-quote">"</div>
+                  <p class="card-testimonial">The moral values instilled in me at Visionland shaped who I am today. From morning devotion to evening prep, every moment was an investment in our future. I carry that discipline everywhere I go.</p>
+                  <div class="card-footer">
+                    <div class="card-avatar" style="background: linear-gradient(135deg, #2F6652, #D4AF37);">OT</div>
+                    <div class="card-info">
+                      <h4>Oluwaseun T.</h4>
+                      <span class="card-year">Class of 2019</span>
+                      <span class="card-role">Civil Engineer, Julius Berger</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="alumni-slide">
+                <div class="alumni-card-v2">
+                  <div class="card-accent"></div>
+                  <div class="card-quote">"</div>
+                  <p class="card-testimonial">Visionland didn't just prepare me for WAEC—they prepared me for life. The teachers genuinely cared about every student. I scored 340 in JAMB and got into UNILAG on my first attempt.</p>
+                  <div class="card-footer">
+                    <div class="card-avatar" style="background: linear-gradient(135deg, #D4AF37, #2F6652);">FA</div>
+                    <div class="card-info">
+                      <h4>Fatimah A.</h4>
+                      <span class="card-year">Class of 2021</span>
+                      <span class="card-role">Law Student, UNILAG</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
-            <p>The leadership opportunities as the Head Girl helped me build the confidence to launch my own tech startup in Yaba immediately after my NYSC.</p>
-            <span class="alumni-outcome">Current: Software Engineer</span>
           </div>
+          <button class="carousel-btn carousel-next" aria-label="Next">&#10095;</button>
+          <div class="carousel-dots"></div>
         </div>
       </div>
     </section>
@@ -268,6 +325,9 @@
             <p><strong>Phone:</strong> +234 901 317 6863</p>
             <p><strong>Email:</strong> admissions@visionlandschool.edu.ng</p>
             <p><strong>Address:</strong> Plot 7 behind Jigaye Shopping Complex Idomogun, Ogijo, Ogun State</p>
+            <div class="map-embed mt-3">
+              <iframe src="https://maps.google.com/maps?q=Visionland+College+plot+7+behind+jigaye+shopping+complex+idomogun+Ogijo+Ogun+State&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0; border-radius: 8px; margin-top: 1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             
             <h3 class="mt-3">Policies & Info</h3>
             <ul class="policy-links">
@@ -277,18 +337,26 @@
               <li><a href="#">Term Dates & Calendar</a></li>
             </ul>
           </div>
-          <form class="contact-form glass-card fade-in-right" action="mailto:jacobstephen045@gmail.com" method="POST" enctype="text/plain">
+          <form class="contact-form glass-card fade-in-right" id="contact-form" action="mailto:jacobstephen045@gmail.com" method="POST" enctype="text/plain">
             <div class="form-group">
               <label for="name">Full Name</label>
-              <input type="text" id="name" required />
+              <input type="text" id="name" name="name" required minlength="2" />
+              <span class="form-feedback"></span>
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input type="email" id="email" required />
+              <input type="email" id="email" name="email" required />
+              <span class="form-feedback"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="e.g. 08012345678" />
+              <span class="form-feedback"></span>
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" rows="4" required></textarea>
+              <textarea id="message" name="message" rows="4" required minlength="10"></textarea>
+              <span class="form-feedback"></span>
             </div>
             <button type="submit" class="btn-primary w-100">Send Message</button>
           </form>
@@ -306,6 +374,24 @@
         </div>
       </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-overlay" id="lightbox">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <img src="" alt="" class="lightbox-img" id="lightbox-img" />
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="scroll-top" aria-label="Scroll to top">
+      &#9650;
+    </button>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2349013176863" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="white">
+        <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.312 22.594c-.39 1.1-1.932 2.014-3.178 2.28-.854.18-1.968.324-5.72-1.23-4.804-1.988-7.898-6.87-8.138-7.19-.23-.32-1.938-2.58-1.938-4.922s1.228-3.49 1.664-3.97c.39-.43.85-.54 1.134-.54.326 0 .652.004.936.016.302.014.706-.114 1.104.842.41 .984 1.39 3.396 1.512 3.642.122.246.204.532.04.854-.162.324-.244.526-.488.812-.244.286-.514.638-.732.856-.244.244-.498.51-.214.998.284.49 1.262 2.084 2.712 3.376 1.864 1.66 3.434 2.174 3.924 2.42.49.244.776.204 1.062-.122.288-.326 1.224-1.428 1.55-1.918.326-.49.652-.408 1.1-.244.448.162 2.86 1.348 3.35 1.594.49.244.816.368.938.572.12.204.12 1.182-.27 2.282z"/>
+      </svg>
+    </a>
 
     <script type="module" src="/src/main.js"></script>
   </body>
