@@ -81,7 +81,7 @@
 
         <div class="founder-section mt-5 fade-in-up">
           <div class="founder-image-wrapper">
-            <video controls autoplay muted loop src="/src/assets/Introduction.mp4" class="founder-img" style="width: 100%; border-radius: 12px;"></video>
+            <video controls autoplay muted loop data-src="/src/assets/Introduction.mp4" class="founder-img lazy-video" style="width: 100%; border-radius: 12px;"></video>
           </div>
           <div class="founder-text">
             <h3>Mrs Bamikole</h3>
@@ -91,8 +91,8 @@
         </div>
 
         <div class="gallery-section mt-5 fade-in-up" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-          <img src="/src/assets/quindecial celebration.jpg" alt="Quindecennial Celebration" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
-          <img src="/src/assets/visionland-students-and-lecturers.jpg" alt="Students and Lecturers" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+          <img src="/src/assets/quindecial celebration.jpg" loading="lazy" alt="Quindecennial Celebration" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+          <img src="/src/assets/visionland-students-and-lecturers.jpg" loading="lazy" alt="Students and Lecturers" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
         </div>
       </div>
     </section>
@@ -141,7 +141,7 @@
         <div class="teachers-appreciation mt-5 fade-in-up text-center glass-card">
           <h3>Celebrating Our Teachers</h3>
           <p>Our dedicated staff are the backbone of Visionland Schools.</p>
-          <video controls autoplay muted loop src="/src/assets/teachers-day.mp4" style="width: 100%; max-width: 600px; border-radius: 12px; margin-top: 1rem;"></video>
+          <video controls autoplay muted loop data-src="/src/assets/teachers-day.mp4" class="lazy-video" style="width: 100%; max-width: 600px; border-radius: 12px; margin-top: 1rem;"></video>
         </div>
       </div>
     </section>
@@ -200,13 +200,13 @@
             </ul>
           </div>
           <div class="student-life-image fade-in-right">
-            <video controls autoplay muted loop src="/src/assets/Social-week.mp4" class="rounded-img" style="width: 100%; border-radius: 12px;"></video>
+            <video controls autoplay muted loop data-src="/src/assets/Social-week.mp4" class="rounded-img lazy-video" style="width: 100%; border-radius: 12px;"></video>
           </div>
         </div>
 
         <div class="student-life-split" style="margin-top: 4rem;">
           <div class="student-life-image fade-in-left">
-            <video controls autoplay muted loop src="/src/assets/cultural-day.mp4" class="rounded-img" style="width: 100%; border-radius: 12px;"></video>
+            <video controls autoplay muted loop data-src="/src/assets/cultural-day.mp4" class="rounded-img lazy-video" style="width: 100%; border-radius: 12px;"></video>
           </div>
           <div class="student-life-text fade-in-right">
             <h3>Celebrating Culture & Diversity</h3>
@@ -277,7 +277,7 @@
               <li><a href="#">Term Dates & Calendar</a></li>
             </ul>
           </div>
-          <form class="contact-form glass-card fade-in-right" action="mailto:admissions@visionlandschool.edu.ng" method="POST" enctype="text/plain">
+          <form class="contact-form glass-card fade-in-right" action="mailto:jacobstephen045@gmail.com" method="POST" enctype="text/plain">
             <div class="form-group">
               <label for="name">Full Name</label>
               <input type="text" id="name" required />
@@ -299,7 +299,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container text-center">
-        <img src="/visionland-logo.png" alt="Visionland" class="footer-logo" />
+        <img src="/visionland-logo.png" loading="lazy" alt="Visionland" class="footer-logo" />
         <p>&copy; 2026 Visionland School. All rights reserved.</p>
         <div class="social-links">
           <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>

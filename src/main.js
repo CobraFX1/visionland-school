@@ -52,4 +52,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     observer.observe(el);
   });
+
+  // Lazy Load Videos
+  const videoObserver = new IntersectionObserver((entries, videoObserver) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        if (video.dataset.src) {
+          video.src = video.dataset.src;
+          video.removeAttribute('data-src');
+        }
+        videoObserver.unobserve(video);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.lazy-video').forEach(video => {
+    videoObserver.observe(video);
+  });
 });
