@@ -16,9 +16,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
+    <!-- Top News Ticker -->
+    <div class="news-ticker">
+        <div class="ticker-content">
+            <span class="ticker-item">📢 Admissions ongoing for the 2026/2027 Academic Session</span>
+            <span class="ticker-item">|</span>
+            <span class="ticker-item">Resumption date: September 14th</span>
+            <span class="ticker-item">|</span>
+            <span class="ticker-item">Check the E-Portal for CBT Results</span>
+            <span class="ticker-item">|</span>
+            <span class="ticker-item">📢 Admissions ongoing for the 2026/2027 Academic Session</span>
+            <span class="ticker-item">|</span>
+            <span class="ticker-item">Resumption date: September 14th</span>
+            <span class="ticker-item">|</span>
+            <span class="ticker-item">Check the E-Portal for CBT Results</span>
+        </div>
+    </div>
+
+    <!-- Top Utility Bar -->
+    <div class="utility-bar">
+        <div class="container utility-container">
+            <div class="utility-links">
+                <a href="/portal.html"><i class="fa-solid fa-users"></i> Student E-Portal</a>
+                <a href="/calendar.html"><i class="fa-regular fa-calendar"></i> Academic Calendar</a>
+            </div>
+            <div class="utility-contact">
+                <a href="mailto:Visionlandschools.info@gmail.com"><i class="fa-solid fa-envelope"></i> Visionlandschools.info@gmail.com</a>
+                <a href="tel:+2348001234567"><i class="fa-solid fa-phone"></i> +234 800 123 4567</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
       <div class="nav-container">
@@ -64,6 +96,12 @@
           <a href="#admissions" class="btn-primary">Apply Now</a>
           <a href="#about" class="btn-secondary">Discover Our History</a>
         </div>
+      </div>
+      <!-- Hero Shape Divider -->
+      <div class="hero-shape-divider">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          </svg>
       </div>
     </header>
 
@@ -114,17 +152,17 @@
         
         <div class="academics-grid">
           <div class="academic-dept fade-in-up" style="--delay: 0.1s">
-            <div class="dept-icon">🔬</div>
+            <div class="dept-icon"><i class="fa-solid fa-microscope"></i></div>
             <h3>Sciences</h3>
             <p>Advanced physics, chemistry, and biology labs fostering the next generation of innovators.</p>
           </div>
           <div class="academic-dept fade-in-up" style="--delay: 0.2s">
-            <div class="dept-icon">🎭</div>
+            <div class="dept-icon"><i class="fa-solid fa-masks-theater"></i></div>
             <h3>Arts & Humanities</h3>
             <p>A deep exploration of literature, history, and the fine arts, encouraging critical thinking.</p>
           </div>
           <div class="academic-dept fade-in-up" style="--delay: 0.3s">
-            <div class="dept-icon">💻</div>
+            <div class="dept-icon"><i class="fa-solid fa-laptop-code"></i></div>
             <h3>Technology</h3>
             <p>Comprehensive computer science and robotics programs integrated into standard coursework.</p>
           </div>
@@ -200,10 +238,10 @@
           <div class="student-life-text fade-in-left">
             <p>At Visionland, we believe in holistic development. From debate clubs to our championship-winning athletics teams, there is a place for every passion. Our exciting school events like "No Bag Day" encourage creativity, bonding, and joy among students.</p>
             <ul class="clubs-list">
-              <li>🏆 Varsity Football & Athletics</li>
-              <li>🗣️ Debate & Press Club</li>
-              <li>🎨 Cultural & Creative Arts Society</li>
-              <li>🎼 JETS Club (Junior Engineers, Technicians and Scientists)</li>
+              <li><i class="fa-solid fa-trophy" style="color: var(--accent-color, #D4AF37); margin-right: 8px;"></i> Varsity Football & Athletics</li>
+              <li><i class="fa-solid fa-bullhorn" style="color: var(--accent-color, #D4AF37); margin-right: 8px;"></i> Debate & Press Club</li>
+              <li><i class="fa-solid fa-palette" style="color: var(--accent-color, #D4AF37); margin-right: 8px;"></i> Cultural & Creative Arts Society</li>
+              <li><i class="fa-solid fa-music" style="color: var(--accent-color, #D4AF37); margin-right: 8px;"></i> JETS Club (Junior Engineers, Technicians and Scientists)</li>
             </ul>
           </div>
           <div class="student-life-image fade-in-right">
@@ -219,9 +257,9 @@
             <h3>Celebrating Culture & Diversity</h3>
             <p>Our annual Cultural Day brings our school community together to celebrate Nigeria's rich heritage and diversity. Students dress in traditional attire, showcase folk dances, share indigenous delicacies, and learn the beauty of unity in diversity across our nation.</p>
             <ul class="clubs-list">
-              <li>🥁 Traditional Music & Dance Performances</li>
-              <li>👗 Indigenous Fashion & Art Exhibitions</li>
-              <li>🍲 Cultural Food Festival & Heritage Tours</li>
+              <li><i class="fa-solid fa-drum" style="color: var(--accent-color, #D4AF37); margin-right: 8px;"></i> Traditional Music & Dance Performances</li>
+              <li><i class="fa-solid fa-shirt" style="color: var(--accent-color, #D4AF37); margin-right: 8px;"></i> Indigenous Fashion & Art Exhibitions</li>
+              <li><i class="fa-solid fa-bowl-food" style="color: var(--accent-color, #D4AF37); margin-right: 8px;"></i> Cultural Food Festival & Heritage Tours</li>
             </ul>
           </div>
         </div>
@@ -323,7 +361,7 @@
           <div class="contact-info fade-in-left">
             <h3>Contact Details</h3>
             <p><strong>Phone:</strong> +234 901 317 6863</p>
-            <p><strong>Email:</strong> admissions@visionlandschool.edu.ng</p>
+            <p><strong>Email:</strong> Visionlandschools.info@gmail.com</p>
             <p><strong>Address:</strong> Plot 7 behind Jigaye Shopping Complex Idomogun, Ogijo, Ogun State</p>
             <div class="map-embed mt-3">
               <iframe src="https://maps.google.com/maps?q=Visionland+College+plot+7+behind+jigaye+shopping+complex+idomogun+Ogijo+Ogun+State&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0; border-radius: 8px; margin-top: 1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -337,7 +375,7 @@
               <li><a href="#">Term Dates & Calendar</a></li>
             </ul>
           </div>
-          <form class="contact-form glass-card fade-in-right" id="contact-form" action="mailto:jacobstephen045@gmail.com" method="POST" enctype="text/plain">
+          <form class="contact-form glass-card fade-in-right" id="contact-form" action="mailto:Visionlandschools.info@gmail.com" method="POST" enctype="text/plain">
             <div class="form-group">
               <label for="name">Full Name</label>
               <input type="text" id="name" name="name" required minlength="2" />
@@ -369,8 +407,10 @@
       <div class="container text-center">
         <img src="/visionland-logo.png" loading="lazy" alt="Visionland" class="footer-logo" />
         <p>&copy; 2026 Visionland School. All rights reserved.</p>
-        <div class="social-links">
-          <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        <div class="social-links" style="font-size: 1.1rem;">
+          <a href="https://web.facebook.com/profile.php?id=61572022095116" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" style="color: var(--accent-color, #D4AF37);"></i> Facebook</a> &nbsp;|&nbsp; 
+          <a href="https://www.instagram.com/visionlandschool/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" style="color: var(--accent-color, #D4AF37);"></i> Instagram</a> &nbsp;|&nbsp; 
+          <a href="#"><i class="fa-brands fa-twitter" style="color: var(--accent-color, #D4AF37);"></i> Twitter</a>
         </div>
       </div>
     </footer>
